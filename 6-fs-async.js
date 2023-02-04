@@ -3,6 +3,8 @@
 // destructuring to get the 'readFileSync' from fs
 const {readFile, writeFile} = require('fs');
 
+// the below is slightly messy with nesting callback functions (see 13-async-patterns)
+
 // runs a callback function when the function is done (like adding an ev listener)
 readFile('./content/first.txt', 'utf8', (err,result)=>{
     if(err){
